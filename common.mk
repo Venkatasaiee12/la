@@ -585,7 +585,7 @@ $(call soong_config_set,qti_thermal,netlink,true)
 # Touch
 PRODUCT_PACKAGES += \
     TouchGestures \
-    vendor.lineage.touch@1.0-service.oplus
+    vendor.lineage.touch-service.oplus
 
 $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touch/include)
 
@@ -636,6 +636,9 @@ PRODUCT_COPY_FILES += \
 # Vibrator
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+
+ODM_MANIFEST_FILES := \
+    $(LOCAL_PATH)/network_manifest_odm.xml
 
 # WiFi
 FORCE_USE_ANDROIDMK_FOR_WPA_CONF := true
