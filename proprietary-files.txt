@@ -2835,7 +2835,7 @@ odm/lib64/vendor.oplus.hardware.charger-V6-ndk.so
 odm/etc/permissions/vendor-oplus-hardware-charger.xml
 odm/lib64/vendor.oplus.hardware.charger@1.0.so
 system_ext/framework/vendor.oplus.hardware.charger-V1-java.jar
-system_ext/framework/vendor.oplus.hardware.charger-V6-java.jar
+system_ext/framework/vendor.oplus.hardware.charger-V8-java.jar
 
 # OPLUS Charger firmware
 odm/firmware/fastchg/22877/bms_heating_config.txt
