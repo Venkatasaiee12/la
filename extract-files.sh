@@ -125,19 +125,6 @@ function blob_fixup() {
             sed -i "/zram or zsmalloc/d" "${2}"
             sed -i "s/-e \"zram\" -e \"zsmalloc\"//g" "${2}"
             ;;
-        vendor/etc/init/vendor.qti.camera.provider-service_64.rc)
-            sed -i "6i\    setenv JE_MALLOC_ZERO_FILLING 1" "${2}"
-            [ "$2" = "" ] && return 0
-            ;;
-        vendor/etc/libnfc-nci.conf)
-            [ "$2" = "" ] && return 0
-            sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"
-            ;;
-        vendor/etc/libnfc-nxp.conf)
-            [ "$2" = "" ] && return 0
-            sed -i "/NXPLOG_\w\+_LOGLEVEL/ s/0x03/0x02/" "${2}"
-            sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"
-            ;;
         vendor/etc/media_codecs_pineapple.xml|vendor/etc/media_codecs_pineapple_vendor.xml)
             [ "$2" = "" ] && return 0
             sed -Ei "/media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio)/d" "${2}"
