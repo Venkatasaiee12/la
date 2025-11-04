@@ -2414,9 +2414,7 @@ vendor/lib64/libfastcvopt.so
 # Fingerprint
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
-odm/etc/uah/uahconfig.pb
 odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v3.xml
-odm/lib64/libuahcore.so
 odm/lib64/libclstc_fod_color.so
 odm/lib64/libolc_vnd.so
 odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so
@@ -3429,8 +3427,6 @@ odm/bin/hw/vendor-oplus-hardware-touch-V2-service
 odm/etc/init/init.touchDaemon.rc
 odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
 odm/etc/vintf/manifest/manifest_touch_aidl.xml
-odm/lib64/liboplus-uah-client.so
-odm/lib64/liburcccore.so
 
 # Trusted Execution Environment connector
 vendor/lib64/libGPMTEEC_vendor.so
