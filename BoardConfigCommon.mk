@@ -164,7 +164,6 @@ TARGET_KERNEL_EXT_MODULES := \
     nxp/opensource/driver
 
 TARGET_KERNEL_EXT_MODULES += \
-    oplus/hardware/radio/kernel/mdmfeature:kbuild \
     oplus/kernel/cpu/thermal:kbuild \
     oplus/kernel/device_info/pogo_keyboard:kbuild \
     oplus/kernel/device_info/tri_state_key:kbuild \
@@ -181,9 +180,6 @@ TARGET_KERNEL_EXT_MODULES += \
     oplus/secure/common/bsp/drivers/oplus_secure_common \
     oplus/sensor/kernel/oplus_consumer_ir:kbuild \
     oplus/sensor/kernel/qcom/sensor:kbuild
-
-# removed for boosting driver simplicity
-#    oplus/secure/biometrics/fingerprints/bsp/uff/driver:kbuild \
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
