@@ -2898,6 +2898,7 @@ odm/lib64/libhta_hexagon_runtime_snpe.so
 # NFC
 odm/etc/nfc/libnfc-mtp-SN220.conf_22877:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_22877:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 
 # OSENSE
 odm/lib64/libosenseaidlhalclient.so
