@@ -439,28 +439,6 @@ odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v3.xml
 odm/lib64/libclstc_fod_color.so
 odm/lib64/libolc_vnd.so
 
-# Fingerprint firmware
-odm/vendor/firmware/uff_gx.b00
-odm/vendor/firmware/uff_gx.b01
-odm/vendor/firmware/uff_gx.b02
-odm/vendor/firmware/uff_gx.b03
-odm/vendor/firmware/uff_gx.b04
-odm/vendor/firmware/uff_gx.b05
-odm/vendor/firmware/uff_gx.b06
-odm/vendor/firmware/uff_gx.b07
-odm/vendor/firmware/uff_gx.b08
-odm/vendor/firmware/uff_gx.mdt
-odm/vendor/firmware/uff_spi.b00
-odm/vendor/firmware/uff_spi.b01
-odm/vendor/firmware/uff_spi.b02
-odm/vendor/firmware/uff_spi.b03
-odm/vendor/firmware/uff_spi.b04
-odm/vendor/firmware/uff_spi.b05
-odm/vendor/firmware/uff_spi.b06
-odm/vendor/firmware/uff_spi.b07
-odm/vendor/firmware/uff_spi.b08
-odm/vendor/firmware/uff_spi.mdt
-
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service-qti
 vendor/etc/init/android.hardware.gatekeeper-service-qti.rc
@@ -905,6 +883,27 @@ vendor/lib64/vendor.qti.qesdhalaidl-V2-ndk.so
 vendor/lib64/vendor.qti.qesdsys-V3-ndk.so
 vendor/lib64/vendor.qti.qesdsys-V4-ndk.so
 
+# Hexlp
+vendor/bin/hexlpservice
+vendor/etc/init/hexlpservice.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.hexlp-service.xml
+vendor/lib64/libnspdependency.so
+vendor/lib64/libnspdescriptorhandler.so
+vendor/lib64/libnspdiag.so
+vendor/lib64/libnspextensionloader.so
+vendor/lib64/libnspframework.so
+vendor/lib64/libnspframeworkcore.so
+vendor/lib64/libnspframeworkcoreutility.so
+vendor/lib64/libnspgraphing.so
+vendor/lib64/libnspipc.so
+vendor/lib64/libnsposal.so
+vendor/lib64/libnspresource.so
+vendor/lib64/libnspscheduler.so
+vendor/lib64/libnspsession.so
+vendor/lib64/libnspsuperresolutionserviceextension.so
+vendor/lib64/libnsptransaction.so
+vendor/lib64/vendor.qti.hardware.hexlp-V1-ndk.so
+
 # QMI - Pinned from Asus WW-36.0210.1420.27
 system/etc/sysconfig/qti_whitelist.xml|38dce21136ead726fc0f57504b837c2511cdd3a1
 vendor/etc/init/init.qlm-service.rc|ca1152b1eaadfb438562b0bd488ee923a05f02c5
@@ -1201,22 +1200,22 @@ vendor/lib64/libsxrservice_client.qti.so
 
 # Sensors
 odm/bin/oplus_sensor_fb
-odm/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service
 odm/etc/init/init.oplus.sensor.rc
-odm/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc
-odm/etc/vintf/manifest/manifest_oplusSensor_aidl.xml
 odm/lib64/liboplus_service.so
-odm/lib64/vendor.oplus.hardware.oplusSensor-V1-ndk.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service
 vendor/bin/init.qcom.sensors.sh
+vendor/bin/qsap_sensors
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.qsap.sensors.rc
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+vendor/etc/seccomp_policy/qsap_sensors.policy
 vendor/etc/vintf/manifest/vendor.qti.hardware.sensorscalibrate.xml
+vendor/lib64/libSensorsInterface.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libqsh.so
 vendor/lib64/libqsh_ble_pb.so
@@ -1267,6 +1266,29 @@ vendor/etc/sensors/config/lanai_tmd2755_0.json
 vendor/etc/sensors/config/lanai_vertigo_ak991x_0.json
 vendor/etc/sensors/config/lanai_vertigo_lsm6dsv_0.json
 vendor/etc/sensors/config/lanai_vertigo_lsm6dsv_1.json
+vendor/etc/sensors/config/palawan_bu52053nvx_0.json
+vendor/etc/sensors/config/palawan_default_sensors.json
+vendor/etc/sensors/config/palawan_dynamic_sensors.json
+vendor/etc/sensors/config/palawan_dynamic_sensors_template.json
+vendor/etc/sensors/config/palawan_fcal_mmc56x3x_0.json
+vendor/etc/sensors/config/palawan_irq.json
+vendor/etc/sensors/config/palawan_lps22df_0.json
+vendor/etc/sensors/config/palawan_lsm6dso_0.json
+vendor/etc/sensors/config/palawan_lsm6dso_1.json
+vendor/etc/sensors/config/palawan_mmc56x3x_0.json
+vendor/etc/sensors/config/palawan_mtp_lsm6dso_0.json
+vendor/etc/sensors/config/palawan_mtp_lsm6dso_1.json
+vendor/etc/sensors/config/palawan_mtp_mmc56x3x_0.json
+vendor/etc/sensors/config/palawan_power_0.json
+vendor/etc/sensors/config/palawan_qrd_lsm6dso_0.json
+vendor/etc/sensors/config/palawan_qrd_mmc56x3x_0.json
+vendor/etc/sensors/config/palawan_qrd_tmd2755_0.json
+vendor/etc/sensors/config/palawan_qsh_ble_0.json
+vendor/etc/sensors/config/palawan_sx932x_0.json
+vendor/etc/sensors/config/palawan_tmd2755_0.json
+vendor/etc/sensors/config/palawan_vertigo_lsm6dso_0.json
+vendor/etc/sensors/config/palawan_vertigo_lsm6dso_1.json
+vendor/etc/sensors/config/palawan_vertigo_mmc56x3x_0.json
 vendor/etc/sensors/config/qsh_ble.json
 vendor/etc/sensors/config/qsh_camera_common.json
 vendor/etc/sensors/config/qsh_camera_imx480_3.json
@@ -1380,6 +1402,7 @@ vendor/lib64/libtrustedapploader.so
 
 # Video
 vendor/lib64/libstreamparser.so
+vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvideotxr.so
 vendor/lib64/libvideoutils.so
 
@@ -1410,6 +1433,7 @@ vendor/lib64/libubwcp.so
 
 # Widevine DRM
 vendor/apex/com.google.android.widevine.nonupdatable.apex
+vendor/etc/vintf/manifest/android.hardware.drm-service.xml
 vendor/etc/oplus_Widevine_licenses.pfm
 
 # WiFi
@@ -1420,4 +1444,3 @@ vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/vendor_cmd.xml
 vendor/etc/wifi/wpa_supplicant_overlay.conf
-vendor/lib64/libcert_parse.wpa_s.so
