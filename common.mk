@@ -48,7 +48,6 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio.usbv2.default \
     audio.r_submix.default \
-    libagmmixer \
     libagm \
     libats \
     libagm_compress_plugin \
