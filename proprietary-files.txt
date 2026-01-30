@@ -186,8 +186,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # CDSP
-odm/lib64/aiframe/cdsp/signed/libQnnHtpV75Skel.so;MODULE_SUFFIX=.signed.aiframe
-odm/lib64/aiframe/cdsp/unsigned/libQnnHtpV75Skel.so;MODULE_SUFFIX=.unsigned.aiframe
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib64/libQ6MSFR_manager_stub.so
@@ -314,6 +312,14 @@ vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
 vendor/lib64/vendor.qti.hardware.embmsslaidl-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.radio.atfwd-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.ims-V1-ndk.so
+odm/lib64/libcommcenterutils.so
+odm/lib64/libcommcenterfw.so
+odm/lib64/libdmtpclient.so
+odm/lib64/libdmtp-protos-lite.so
+odm/lib64/lib-virtual-modem-protos.so
+odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
 
 # Data (RIL) - Pinned from Asus WW-36.0210.1420.27
 vendor/etc/data/dsi_config.xml|b72d8f7cea51d1317dcf1852016537855d7a7c70
@@ -600,6 +606,7 @@ system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c761
 -system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|7616e2b6a8cb3dd2c7c594eed1b16417a1257125
 -system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|c27f4e77d677a3e8d1c1c91ca1b40958dfb7f9d6
 -system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so|4cf18759170f7de629d7197bda926048ebddc481
+system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|961321653e924726bd01af6bfbb33c6740bc66af
 -system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|33008343e8ac15821278faecc1c234e8bea3fe2d
 -system_ext/priv-app/ims/ims.apk;NODEXPO|a7f6f9f5634efa143fe0daa5065d74b91f3e780c
@@ -807,6 +814,9 @@ vendor/bin/pd-mapper
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 
+# Performance
+vendor/lib64/libpowercore.so
+
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
@@ -886,22 +896,8 @@ vendor/lib64/vendor.qti.qesdsys-V4-ndk.so
 # Hexlp
 vendor/bin/hexlpservice
 vendor/etc/init/hexlpservice.rc
-vendor/etc/vintf/manifest/vendor.qti.hardware.hexlp-service.xml
-vendor/lib64/libnspdependency.so
-vendor/lib64/libnspdescriptorhandler.so
-vendor/lib64/libnspdiag.so
-vendor/lib64/libnspextensionloader.so
-vendor/lib64/libnspframework.so
-vendor/lib64/libnspframeworkcore.so
 vendor/lib64/libnspframeworkcoreutility.so
-vendor/lib64/libnspgraphing.so
-vendor/lib64/libnspipc.so
-vendor/lib64/libnsposal.so
-vendor/lib64/libnspresource.so
-vendor/lib64/libnspscheduler.so
-vendor/lib64/libnspsession.so
-vendor/lib64/libnspsuperresolutionserviceextension.so
-vendor/lib64/libnsptransaction.so
+vendor/etc/vintf/manifest/vendor.qti.hardware.hexlp-service.xml
 vendor/lib64/vendor.qti.hardware.hexlp-V1-ndk.so
 
 # QMI - Pinned from Asus WW-36.0210.1420.27
