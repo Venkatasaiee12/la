@@ -96,7 +96,7 @@ function lib_to_package_fixup() {
 setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "waffle"
+write_headers "lexus"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt"
