@@ -31,10 +31,10 @@ AB_OTA_PARTITIONS += \
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv9-a
+TARGET_ARCH_VARIANT := armv8-2a-dotprod
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_VARIANT := kryo785
-
+TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT_RUNTIME := kryo385
 # Audio
 AUDIO_FEATURE_ENABLED_DLKM := true
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
@@ -112,7 +112,7 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
-
+TARGET_KERNEL_ADDITIONAL_FLAGS := CONFIG_OPLUS_DEVICE_DTBS=y
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm8650
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
@@ -155,7 +155,8 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/video-driver \
     qcom/opensource/graphics-kernel \
     qcom/opensource/wlan/platform \
-    qcom/opensource/wlan/qcacld-3.0 \
+    qcom/opensource/wlan/qcacld-3.0/.kiwi_v2 \
+    qcom/opensource/wlan/qcacld-3.0/.qca6750 \
     qcom/opensource/bt-kernel \
     qcom/opensource/spu-kernel \
     qcom/opensource/mm-sys-kernel/ubwcp \
